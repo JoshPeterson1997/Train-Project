@@ -14,5 +14,10 @@ form {
 }
 
 .button {
-  border: 8px;
+  background-color: lightblue;
+  border: solid thin black;
+  border-radius: 16px;
+  color: black;
+  margin-top: 16px;
+  padding: 8px;
 }
