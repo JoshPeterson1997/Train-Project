@@ -21,3 +21,38 @@ form {
   margin-top: 16px;
   padding: 8px;
 }
+
+.button--jumbo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 10vh;
+  text-transform: uppercase;
+  transition: a11 0.25s;
+  width: 40vw;
+}
+
+button--jumbo:hover,
+.button--jumbo:focus {
+  border-radius: 32px;
+}
+
+.button--reset {
+  background-color: orange;
+}
+
+.flex {
+  display: flex;
+  gap: var(--medium-gap);
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
