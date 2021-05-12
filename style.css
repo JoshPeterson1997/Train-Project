@@ -13,6 +13,7 @@ form {
   width: 480px;
 }
 
+/* Utility Classes */
 .button {
   background-color: lightblue;
   border: solid thin black;
@@ -22,6 +23,7 @@ form {
   padding: 8px;
 }
 
+/* The `--` conveys that this is a modifier class intended for use with `.button` */
 .button--jumbo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -38,6 +40,11 @@ button--jumbo:hover,
 
 .button--reset {
   background-color: orange;
+}
+
+.card {
+  border: solid thin black;
+  border-radius: 4px;
 }
 
 .flex {
@@ -65,8 +72,16 @@ button--jumbo:hover,
   text-align: center;
 }
 
+/* CSS Tricks */
 .screen-header-text {
   left: -9999px;
   position: absolute;
   top: -9999px;
+}
+
+/* JS Classes */
+
+/* This class will be added for any todo item with a `completed: true` */
+.is-completed {
+  text-decoration: line-through;
 }
