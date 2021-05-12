@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const p = document.querySelector('p');
-const students = [];
+const trains = [];
 
 function getRandomIntInclusive(min, max) {
   const currentMin = Math.ceil(min);
@@ -11,14 +11,14 @@ function getRandomIntInclusive(min, max) {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  const newStudent = Object.fromEntries(new FormData(event.target));
+  const newTrain = Object.fromEntries(new FormData(event.target));
 
-  students.push(newStudent);
+  trains.push(newTrain);
 });
 
 document.querySelector('.button--jumbo').addEventListener('click', () => {
-  // Get a random student object in the `students` array
-  const randomName = students[getRandomIntInclusive(0, students.length - 1)];
+  // Get a random student object in the `trains` array
+  const randomName = trains[getRandomIntInclusive(0, trains.length - 1)];
 
   // Log the first and last name of the student using template literals
   p.innerText = `${randomName.fname} ${randomName.lname}`;
