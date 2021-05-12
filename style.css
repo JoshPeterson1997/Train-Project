@@ -4,6 +4,15 @@ body {
   font-size: 10px;
 }
 
+form {
+  border: solid thin black;
+  border-radius: 16px;
+  gap: 16px;
+  margin: auto 0;
+  padding: 8px;
+  width: 480px;
+}
+
 .button {
   border: 8px;
 }
