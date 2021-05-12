@@ -3,18 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
 
-    <title>Frontend Starter</title>
+    <title>Train Form</title>
   </head>
   <body>
-    <h1>Frontend Starter</h1>
+    <h1>Train Form</h1>
+
+    <form class="flex flex--column">
+      <div>
+        <label for="tbuilder" class="screen-reader-text">Train Builder</label
+        ><input placeholder="Train Builder" type="text" id="tbuilder" />
+      </div>
+      <div>
+        <label for="ttype" class="screen-reader-text">Train Type</label
+        ><input placeholder="Train Type" type="text" id="ttype" />
+      </div>
+      <button type="submit" class="button">Added Train!</button>
+      <button type="reset" class="button button--reset">Reset!</button>
+    </form>
+
+    <div class="flex flex-justify-center mt-medium">
+      <button class="button button--jumbo">Pick a train!</button>
+    </div>
+
+    <p></p>
+
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
