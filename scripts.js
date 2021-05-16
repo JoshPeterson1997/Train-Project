@@ -1,13 +1,18 @@
+// Import the trains arrays from the data.js file
+import trains from './data.js';
+
+// querySelector the form and p tag
 const form = document.querySelector('form');
 const p = document.querySelector('p');
-const trains = [];
 
+// Grab the max and min function
 function getRandomIntInclusive(min, max) {
   const currentMin = Math.ceil(min);
   const currentMax = Math.floor(max);
   return Math.floor(Math.random() * (currentMax - currentMin + 1) + currentMin); // The maximum is inclusive and the minimum is inclusive
 }
 
+// Push the trains from the form
 form.addEventListener('submit', event => {
   event.preventDefault();
 
